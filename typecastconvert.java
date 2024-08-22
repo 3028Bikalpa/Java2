@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 
 public class typecastconvert {
@@ -40,18 +39,7 @@ public class typecastconvert {
         // String s2 = s1+courseTitle; //concatenation: adding texts using the '+' sign
         // System.out.println(s2);
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the sides of the triangle");
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double c = sc.nextDouble();
-        if(((a+b)<c)||((b+c)<a)||(a+c)<b){
-            System.out.println("This sort of triangle does not exist");
-        }else{
-        double s = (a+b+c)/2;
-        double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
-        System.out.println("The are of the triangle is "+ area);
-        }
+        
         //string
         // String name = "Bikki";
         // System.out.println(name);
@@ -79,5 +67,28 @@ public class typecastconvert {
         //     //here we take action when the exception occurs
         //     System.out.println("!!!There seems to be an error!!!");
         // }
+
+        //Assignments
+        //Area of a rectangle
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the sides of the triangle");
+        // double a = sc.nextDouble();
+        // double b = sc.nextDouble();
+        // double c = sc.nextDouble();
+        // if(((a+b)<c)||((b+c)<a)||(a+c)<b){
+        //     System.out.println("This sort of triangle does not exist");
+        // }else{
+        // double s = (a+b+c)/2;
+        // double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        // System.out.println("The are of the triangle is "+ area);
+        // }
+
+        //Printing an integer
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a number that you want to print: ");
+        // int num = sc.nextInt();
+        // System.out.println("The number entered by the user is: "+num);
+
+
     }
 }
