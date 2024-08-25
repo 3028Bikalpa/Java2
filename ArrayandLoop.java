@@ -9,7 +9,9 @@ public class ArrayandLoop {
         ages[2]=22;
         mp(ages[3]);
         mp(ages);
-        mp(ages[10]);
         mp("Hi! we're here.");
+
+        float[] weights;
+        
     }
 }
