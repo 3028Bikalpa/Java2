@@ -39,3 +39,27 @@ public class lab1 {
         myP(c1);
     }
 }
+
+
+class Bird{
+    String name;
+    int age;
+    FOOD food;
+    Species spec;
+    void fly(int distance)
+    {
+        lab1.myP("This bird is flying");
+    }
+    void eat(FOOD f){
+        lab1.myP("This bird is eating food");
+        lab1.myP("This bird is eating "+f.weight+f.name);
+    }
+}
+
+class FOOD{
+    String name = "insect";
+    int weight=10;
+}
+
+class Species{
+}
