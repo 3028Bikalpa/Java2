@@ -13,7 +13,7 @@ public class IsItSameRow {
         boolean row2 = false;
         boolean row3 = false;
         for (int i = 0; i < word.length(); i++) {
-            char c = word.charAt(i);
+            char c = word.charAt(i); //quiet
             if (first.contains(String.valueOf(c))) row1 = true;
             if (second.contains(String.valueOf(c))) row2 = true;
             if (third.contains(String.valueOf(c))) row3 = true;

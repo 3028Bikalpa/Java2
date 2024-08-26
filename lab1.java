@@ -1,9 +1,11 @@
 
-import java.util.Scanner;
 
 
 
 public class lab1 {
+    public static void myP(Object o) {
+        System.out.println(o);
+    }
     public static void main(String[] args) {
         // System.out.println("Hello, Online Judge!");
 
@@ -21,15 +23,19 @@ public class lab1 {
         // int sum = a+b;
         // System.out.println("The sum of the numbers that you provided is: "+sum);
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the score that you want to check for the grade: ");
-        float score = sc.nextFloat();
-        if(score>=98){
-            System.out.println("A+");
-        }
-        else if(score>=93&&score<98){
-            System.out.println("A");
-        }
-        else if()
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the score that you want to check for the grade: ");
+        // float score = sc.nextFloat();
+        // if(score>=98){
+        //     System.out.println("A+");
+        // }
+        // else if(score>=93&&score<98){
+        //     System.out.println("A");
+        // }
+        // else if()
+
+        String s1 = "cs201 is a good course";
+        char c1 = s1.charAt(4);
+        myP(c1);
     }
 }
