@@ -1,9 +1,13 @@
 
 
-
+//a static method is also called class wide method
 
 public class lab1 {
     public static void myP(Object o) {
+        System.out.println(o);
+    }
+
+    public void say (Object o){
         System.out.println(o);
     }
     public static void main(String[] args) {
@@ -37,6 +41,25 @@ public class lab1 {
         String s1 = "cs201 is a good course";
         char c1 = s1.charAt(4);
         myP(c1);
+
+
+        Bird b1 = new Bird(); //first bird created
+        b1.name = "1stGuy";
+        b1.age = 2;
+        b1.food = new FOOD();
+        b1.spec = new Species();
+        //need to work to remove the red mark of error from f1
+
+
+
+        Bird b2 = new Bird();
+
+        //b1.BadBird();
+
+
+        Bird b3 = new Bird("Micheal", 3);
+
+        lab1.myP(b3);
     }
 }
 
@@ -46,6 +69,25 @@ class Bird{
     int age;
     FOOD food;
     Species spec;
+
+    //a constructor
+    void BadBird(){ //if we have a return type, this method is not a constructor but a normal methodthathas the same name as the class! Also, void is not needed here
+        lab1.myP("A normal method with the name Bird");
+    }
+
+    //a default constructor
+    Bird(){
+        lab1 dp = new lab1();
+        dp.say("Hi! this is the constructor class bird");
+    }
+
+    //a parameterized constructor
+    Bird(String name, int age){
+        //we could initialize the object
+        this.name = name; //use the key this to tell the variable isan attributeof the class
+        this.age = age;
+    }
+
     void fly(int distance)
     {
         lab1.myP("This bird is flying");
