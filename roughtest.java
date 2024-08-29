@@ -24,31 +24,56 @@ public class roughtest {
 
         // System.out.println(my2DArray);
         // System.out.println(my2DArray[1]);
+        
+        
+        
+        
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Which number of day do you want to print?");
+        // int num = sc.nextInt();
+        // switch(num){
+        //     case 1:
+        //     System.out.println("Monday");
+        //     break;
+        //     case 2:
+        //     System.out.println("Tuesday");
+        //     break;
+        //     case 3:
+        //     System.out.println("Wednesday");
+        //     break;
+        //     case 4:
+        //     System.out.println("Thursday");
+        //     break;
+        //     case 5:
+        //     System.out.println("Friday");
+        //     break;
+        //     case 6:
+        //     System.out.println("Saturday");
+        //     break;
+        //     case 7:
+        //     System.out.println("Sunday");
+        //     break;
+        //     default:
+        //     System.out.println("You entered something incorrect.");
+        // }
+
+        
+        
+        
+        //For the code to find if the entered character is a vowel or not
         Scanner sc = new Scanner(System.in);
-        System.out.println("Which number of day do you want to print?");
-        int num = sc.nextInt();
-        switch(num){
-            case 1:
-            System.out.println("Monday");
+        System.out.println("Enter the character that you want to check if it is vowel or not: ");
+        String test = sc.next();
+        switch(test){
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+            System.out.println("Its a vowel");
             break;
-            case 2:
-            System.out.println("Tuesday");
-            break;
-            case 3:
-            System.out.println("Wednesday");
-            break;
-            case 4:
-            System.out.println("Thursday");
-            break;
-            case 5:
-            System.out.println("Friday");
-            break;
-            case 6:
-            System.out.println("Saturday");
-            break;
-            case 7:
-            System.out.println("Sunday");
-            break;
+            default:
+            System.out.println("You didn't enter a vowel");
         }
     }
 }
