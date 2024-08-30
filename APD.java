@@ -7,6 +7,10 @@ public class APD {
         mu[0]=new Pianist();
         mu[1]=new Guitarist();
         mu[2]=new Violinist();
+        mu[3]=new Pianist();
+        for (int i = 0; i < mu.length; i++) {
+            mu[i].play();
+        }
     }
 }
 
