@@ -1,6 +1,5 @@
 
 import java.io.FileNotFoundException;
-
 public class ExceptionDemo {
     public static void main(String[] args) throws FileNotFoundException {
         String myName="Toyota";
@@ -58,7 +57,17 @@ public class ExceptionDemo {
         // } catch (FileNotFoundException e) {
         //     System.out.println("我不认识那个人");
         // }
-        Scanner in = new Scanner(new File("Feiyang.txt"));
+        //Scanner in = new Scanner(new File("Feiyang.txt"));
+        Student xinyi = new Student();
+        try {
+            String reaction = xinyi.reactToGrade(98+2);
+            System.out.println(reaction);
+        } catch (HeartBrokenException e) {
+            System.out.println("Xinyi is hearbroken even with 98 points!");
+       }
+       finally{
+        System.out.println("At least, I'm done");
+       }
     }
 }
 
