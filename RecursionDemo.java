@@ -36,6 +36,7 @@ public class RecursionDemo{
     //     }else{
     //         return 1;
     //     }
-    // this is the program for finding the factorial of a number using recursionx
+    // this is the program for finding the factorial of a number using recursion, the upper one will help us know how many time the function is called before the program encounters an error
+    
 }
     
